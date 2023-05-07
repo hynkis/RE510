@@ -6,6 +6,8 @@ A simple ROS based car dynamics simulator.
 
 Follow either of the following.
 
+(Skip this if you already has ROS environment.)
+
 ### Official Documentation
 
 `Noetic` with `Ubuntu 20.04` is recommended.\
@@ -29,7 +31,7 @@ To edit, run `gedit ~/.bashrc`.
 Run the following command to install all ROS dependencies for the `src/` directory.
 ```
 cd ~/catkin_ws
-rosdep install --from-paths src --ignore-src -r -y
+rosdep install --from-paths src -r -y
 ```
 
 ## Install Python Dependencies
@@ -40,6 +42,14 @@ pip2 install numpy --user
 ```
 Note, ROS (~melodic) runs with `python 2.x`
 
+## Permission setting
+```
+cd ~/catkin_ws/src/RE510/simple_vehicle_sim/scripts
+chmod 777 simulate_dynamics.py
+
+cd ~/catkin_ws/src/RE510/waypoint_follower/scripts
+chmod 777 controller.py  wpt_loader.py
+```
 
 ## Running the Simulator
 

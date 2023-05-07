@@ -33,10 +33,10 @@ class SimulateStep(object):
         '''
         Initial conditions
         '''
-        self.x0          = 0.
-        self.y0          = 3.
-        self.yaw0        = 0.
-        self.vx0         = 0.
+        self.x0          =  0.
+        self.y0          = -0.5
+        self.yaw0        =  0.
+        self.vx0         =  0.
 
         '''
         Parameters (RC platform)
