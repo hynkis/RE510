@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 '''
 @author : USRG(Unmanned Systems Research Group) @ KAIST
 @date   : 2021-03
