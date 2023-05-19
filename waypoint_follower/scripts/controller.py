@@ -194,8 +194,8 @@ def main():
 
         # Log errors (errors w.r.t. the closest point)
         error_y_log, _ = calc_error(ego_x, ego_y, ego_yaw, wpts_x, wpts_y, wpt_look_ahead=0)
-        error_y_data.append(error_y_log)
-        error_v_data.append(error_v)
+        error_y_data.append(abs(error_y_log))
+        error_v_data.append(abs(error_v))
 
         # Control
         steer_cmd = wpt_control.steer_control(error_y, error_yaw)
